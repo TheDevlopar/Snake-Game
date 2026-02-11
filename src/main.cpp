@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Game.h"
 #include <ctime>
+#include "raylib.h"
 
 
 int main(){

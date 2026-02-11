@@ -1,0 +1,3 @@
+/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles/Snake.dir
+/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles/edit_cache.dir
+/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles/rebuild_cache.dir
