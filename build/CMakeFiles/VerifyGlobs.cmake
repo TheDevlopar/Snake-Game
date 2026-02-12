@@ -8,6 +8,7 @@ set(OLD_GLOB
   "/home/pranav/Documents/c++_code/Snake-Console-/src/Board.cpp"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/Food.cpp"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/Game.cpp"
+  "/home/pranav/Documents/c++_code/Snake-Console-/src/Snake.cpp"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

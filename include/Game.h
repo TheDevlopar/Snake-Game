@@ -1,6 +1,7 @@
 #pragma once
 #include "Board.h"
 #include "Food.h"
+#include "Snake.h"
 #include "raylib.h"
 
 class Game{
@@ -11,8 +12,12 @@ class Game{
         int posY = 40;
         int randX = 0;
         int randY = 0;
+        char tempDir = 'X';
+        char dir = 'X';
         Board board;
         Food food;
+        Snake snake;
     public:
         void run();
+        char getDir();
 };

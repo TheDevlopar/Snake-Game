@@ -54,6 +54,7 @@ CMakeFiles/Snake.dir/src/Game.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Food.h \
+ /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Snake.h \
  /usr/local/include/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \

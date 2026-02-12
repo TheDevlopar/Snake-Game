@@ -156,4 +156,5 @@ CMakeFiles/Snake.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Food.h
+ /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Food.h \
+ /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Snake.h
