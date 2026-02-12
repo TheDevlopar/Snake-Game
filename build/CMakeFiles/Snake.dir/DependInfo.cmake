@@ -10,9 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pranav/Documents/c++_code/Snake-Console-/src/Board.cpp" "CMakeFiles/Snake.dir/src/Board.cpp.o" "gcc" "CMakeFiles/Snake.dir/src/Board.cpp.o.d"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/Game.cpp" "CMakeFiles/Snake.dir/src/Game.cpp.o" "gcc" "CMakeFiles/Snake.dir/src/Game.cpp.o.d"
-  "/home/pranav/Documents/c++_code/Snake-Console-/src/food.cpp" "CMakeFiles/Snake.dir/src/food.cpp.o" "gcc" "CMakeFiles/Snake.dir/src/food.cpp.o.d"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/main.cpp" "CMakeFiles/Snake.dir/src/main.cpp.o" "gcc" "CMakeFiles/Snake.dir/src/main.cpp.o.d"
-  "/home/pranav/Documents/c++_code/Snake-Console-/src/snake.cpp" "CMakeFiles/Snake.dir/src/snake.cpp.o" "gcc" "CMakeFiles/Snake.dir/src/snake.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

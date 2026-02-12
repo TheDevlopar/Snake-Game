@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
   "/usr/local/lib/cmake/raylib/raylib-config-version.cmake"
   "/usr/local/lib/cmake/raylib/raylib-config.cmake"
   "/usr/local/lib/cmake/raylib/raylib-targets-noconfig.cmake"
