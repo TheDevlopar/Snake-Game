@@ -4,8 +4,8 @@
 struct Position;
 class Board{
     private:
-        int height = 800;
-        int width = 1200;
+        int height = 720;
+        int width = 1120;
         int rectH = 40;
         int rectW = 40;
     public:

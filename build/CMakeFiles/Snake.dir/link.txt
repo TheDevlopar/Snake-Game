@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Snake.dir/src/Board.cpp.o CMakeFiles/Snake.dir/src/Game.cpp.o CMakeFiles/Snake.dir/src/main.cpp.o -o Snake  /usr/local/lib/libraylib.a -lm 
+/usr/bin/c++ CMakeFiles/Snake.dir/src/Board.cpp.o CMakeFiles/Snake.dir/src/Food.cpp.o CMakeFiles/Snake.dir/src/Game.cpp.o CMakeFiles/Snake.dir/src/main.cpp.o -o Snake  /usr/local/lib/libraylib.a -lm 

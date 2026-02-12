@@ -195,8 +195,13 @@ CMakeFiles/Snake.dir/src/Board.cpp.o: /home/pranav/Documents/c++_code/Snake-Cons
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/local/include/raylib.h
 
+CMakeFiles/Snake.dir/src/Food.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/Food.cpp \
+  /home/pranav/Documents/c++_code/Snake-Console-/include/Food.h \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/Snake.dir/src/Game.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/Game.cpp \
   /home/pranav/Documents/c++_code/Snake-Console-/include/Board.h \
+  /home/pranav/Documents/c++_code/Snake-Console-/include/Food.h \
   /home/pranav/Documents/c++_code/Snake-Console-/include/Game.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -392,6 +397,7 @@ CMakeFiles/Snake.dir/src/Game.cpp.o: /home/pranav/Documents/c++_code/Snake-Conso
 
 CMakeFiles/Snake.dir/src/main.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/main.cpp \
   /home/pranav/Documents/c++_code/Snake-Console-/include/Board.h \
+  /home/pranav/Documents/c++_code/Snake-Console-/include/Food.h \
   /home/pranav/Documents/c++_code/Snake-Console-/include/Game.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -738,6 +744,8 @@ CMakeFiles/Snake.dir/src/main.cpp.o: /home/pranav/Documents/c++_code/Snake-Conso
 
 /usr/include/c++/13/bits/string_view.tcc:
 
+/home/pranav/Documents/c++_code/Snake-Console-/include/Food.h:
+
 /usr/include/features.h:
 
 /usr/include/c++/13/backward/binders.h:
@@ -847,6 +855,8 @@ CMakeFiles/Snake.dir/src/main.cpp.o: /home/pranav/Documents/c++_code/Snake-Conso
 /usr/include/c++/13/bits/utility.h:
 
 /usr/include/c++/13/bits/vector.tcc:
+
+/home/pranav/Documents/c++_code/Snake-Console-/src/Food.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
