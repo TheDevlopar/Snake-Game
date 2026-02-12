@@ -1,19 +1,12 @@
 #pragma once
 #include "Board.h"
-#include "snake.h"
-#include "food.h"
 
 class Game{
-    private:
-        Board board;
-        Snake snake;
-        Food food;
+    private: 
         bool running = true;
-        char dir = 'x';
-        int score = 0;
+        int posX = 0;
+        int posY = 0;
+        Board board;
     public:
         void run();
-        char getDir();
-        bool gameOver();
-        bool restart();
 };

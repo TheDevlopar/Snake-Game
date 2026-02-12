@@ -12,7 +12,7 @@ find_package(raylib REQUIRED)
 include_directories(include)
 
 # Grab all .cpp files
-file(GLOB SRC_FILES src/*.cpp)
+file(GLOB SRC_FILES CONFIGURE_DEPENDS src/*.cpp)
 
 # Create executable
 add_executable(Snake ${SRC_FILES})

@@ -4,8 +4,13 @@
 struct Position;
 class Board{
     private:
-        int height = 35;
-        int width = 35;
+        int height = 800;
+        int width = 1200;
+        int rectH = 40;
+        int rectW = 40;
     public:
-        void drawBoard(const std::vector<Position>& body, int Fx, int Fy, int score);
+        int getRectH();
+        int getRectW();
+        int getH();
+        int getW();
 };
