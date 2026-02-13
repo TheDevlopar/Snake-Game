@@ -19,6 +19,13 @@ char Game::getDir(){
         return 'X';
     }
 }
+void Game::render(Board &board){
+    for(int i = 40; i < board.getBH(); i += 40){
+        for(int j = 40; j < board.getBW(); j += 40){
+            DrawRectangleLines(j, i, board.getRectW(), board.getRectH(), myWhite);
+        }
+    }
+}
 
 void Game::run(){
     InitWindow(1200, 800, "MyGame");
@@ -34,21 +41,7 @@ void Game::run(){
         BeginDrawing();
         ClearBackground(BLACK);
         //Draw Board
-        while(running){
-            DrawRectangleLines(posX, posY, board.getRectW(), board.getRectH(), myWhite);
-            if(posY < board.getH()){
-                posY += 40;
-            }
-            else if(posY == board.getH() && posX != board.getW()){
-                posY = 40;
-                posX += 40;
-            }
-            else if(posY == board.getH() && posX == board.getW()){
-                running = false;
-                posX = 40;
-                posY = 40;
-            }
-        }
+        render(board);
         //Food
         DrawRectangle(food.getX(randX), food.getY(randY), board.getRectW(), board.getRectH(), BLUE);
         //Snake draw

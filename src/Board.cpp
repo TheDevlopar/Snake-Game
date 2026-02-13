@@ -15,3 +15,9 @@ int Board::getH(){
 int Board::getW(){
     return width;
 }
+int Board::getBH(){
+    return height;
+}
+int Board::getBW(){
+    return width;
+}

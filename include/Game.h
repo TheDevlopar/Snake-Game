@@ -19,5 +19,6 @@ class Game{
         Snake snake;
     public:
         void run();
+        void render(Board &board);
         char getDir();
 };

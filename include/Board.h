@@ -13,4 +13,6 @@ class Board{
         int getRectW();
         int getH();
         int getW();
+        int getBH();
+        int getBW();
 };
