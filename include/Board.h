@@ -11,8 +11,6 @@ class Board{
     public:
         int getRectH();
         int getRectW();
-        int getH();
-        int getW();
         int getBH();
         int getBW();
 };

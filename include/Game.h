@@ -12,8 +12,12 @@ class Game{
         int posY = 40;
         int randX = 0;
         int randY = 0;
+        int fPosX = 0;
+        int fPosY = 0;
         char tempDir = 'X';
         char dir = 'X';
+        int speed = 5;
+        int timer = 0;
         Board board;
         Food food;
         Snake snake;
@@ -21,4 +25,9 @@ class Game{
         void run();
         void render(Board &board);
         char getDir();
+        void drawSnake(Snake &snake);
+        void setFX();
+        void setFY();
+        void spawnFood();
+        bool isGameOver();
 };

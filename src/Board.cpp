@@ -9,12 +9,6 @@ int Board::getRectH(){
 int Board::getRectW(){
     return rectW;
 }
-int Board::getH(){
-    return height;
-}
-int Board::getW(){
-    return width;
-}
 int Board::getBH(){
     return height;
 }

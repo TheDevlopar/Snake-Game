@@ -26,34 +26,77 @@ void Game::render(Board &board){
         }
     }
 }
-
+void Game::spawnFood(){
+    DrawRectangle(fPosX, fPosY, 40, 40, BLUE);
+}
+void Game::drawSnake(Snake &snake){
+    for(int i = 0; i < snake.getSnakeLen(); i++){
+        DrawRectangle(snake.getSnakeX(i), snake.getSnakeY(i), 40, 40, RED);
+    }
+}
+void Game::setFX(){
+    randX = GetRandomValue(1, 27);
+    fPosX = food.getX(randX);
+    
+}
+void Game::setFY(){
+    randY = GetRandomValue(1, 17);
+    fPosY = food.getX(randY);
+}
+bool Game::isGameOver(){
+    if(snake.getSnakeX(0) >= board.getBW() || snake.getSnakeX(0) <= 0 || snake.getSnakeY(0) >= board.getBH() || snake.getSnakeY(0) <= 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 void Game::run(){
-    InitWindow(1200, 800, "MyGame");
+    InitWindow(1160, 760, "MyGame");
     SetTargetFPS(60);
 
 
     //Get random numbers for food
-    randX = GetRandomValue(1, 28);
-    randY = GetRandomValue(1, 18);
-
+    
+    
+    setFX();
+    setFY();
     while(!WindowShouldClose()){
-        //ClearBackground(BLACK);
+        
         BeginDrawing();
         ClearBackground(BLACK);
+
+        //Frame counter for snake movement 
+        timer++;
         //Draw Board
         render(board);
+
         //Food
-        DrawRectangle(food.getX(randX), food.getY(randY), board.getRectW(), board.getRectH(), BLUE);
+        spawnFood();
+        while(snake.getSnakeX(0) == fPosX && snake.getSnakeY(0) == fPosY){
+            setFX();
+            setFY();
+            snake.setEat(true);
+        }
+        
+
         //Snake draw
-        DrawRectangle(snake.getSnakeX(), snake.getSnakeY(), 40, 40, RED);
+        drawSnake(snake);
+
         //Input  
         tempDir = getDir();
         if(tempDir != dir && tempDir != 'X'){
             dir = tempDir;
         }
-        snake.move(dir);
-        running = true;
+        if(timer == speed){
+            snake.move(dir);
+            timer = 0;
+        }
+        snake.setEat(false);
         EndDrawing();
+        if(isGameOver() == true){
+            CloseWindow();
+        }
     }
     CloseWindow();
 }
