@@ -2,6 +2,7 @@
 #include "Snake.h"
 #include "raylib.h"
 
+
 class Game{
     private: 
         struct Board{
@@ -27,6 +28,8 @@ class Game{
         int size = 40;
         int speed = 5;
         int timer = 0;
+        int highScore = 0;
+        int score = 0;
         bool isEat = false;
         Board board;
         Food food;
@@ -38,4 +41,6 @@ class Game{
         void restart();
         bool isGameOver();
         bool isCollision();
+        void loadHighScore();
+        void setScore();
 };

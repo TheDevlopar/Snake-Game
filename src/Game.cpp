@@ -1,6 +1,17 @@
 #include "../include/Game.h"
 #include <iostream>
 #include "raylib.h"
+#include <fstream>
+
+void Game::loadHighScore(){
+    std::ifstream file("highScore.txt");
+    file >> highScore;
+}
+
+void Game::setScore(){
+    std::ofstream file("highScore.txt");
+    file << highScore;
+}
 
 char Game::getDir(){
     if(IsKeyPressed(KEY_W) && dir != 'S'){
@@ -69,6 +80,7 @@ void Game::restart(){
     timer = 0;
     dir = 'X';
     running = true;
+    score = 0;
 }
 
 void Game::run(){
@@ -82,6 +94,8 @@ void Game::run(){
         if(running){
             ClearBackground(BLACK);
 
+            loadHighScore();
+            DrawText(std::to_string(score).c_str(), 560, 20, 20, WHITE);
             //Frame counter for snake movement 
             timer++;
 
@@ -106,6 +120,7 @@ void Game::run(){
                 if(snake.getSnakeX(0) == food.posX && snake.getSnakeY(0) == food.posY){
                     food.setFPos();
                     isEat = true;
+                    score++;
                 }
                 else{
                     isEat = false;
@@ -113,13 +128,18 @@ void Game::run(){
                 snake.move(dir, isEat);
                 if(isGameOver() || isCollision()){
                     running = false;
+                    if(score > highScore){
+                        highScore = score;
+                        setScore();
+                    }
                 }
                 timer = 0;
             }
         }
         else{
             ClearBackground(BLACK);
-            DrawText("Game Over \n Press Enter to play again \n Press ESC to exit", 360, 560, 20, WHITE);
+            DrawText((" \n HighScore : " + std::to_string(highScore)).c_str(), 360, 560, 20, WHITE);
+            DrawText(" \n Game Over \n Press Enter to play again \n Press ESC to exit", 360, 600, 20, WHITE);
             if(IsKeyPressed(KEY_ENTER)){
                 restart();
             }
