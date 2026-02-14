@@ -23,6 +23,12 @@ cmake ..
 make
 ./Snake
 ```
+or (Without CMake)
+
+```
+g++ src/*.cpp -Iinclude -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o Snake
+./Snake
+```
 
 ### Controls
 Example: 
