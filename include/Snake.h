@@ -18,7 +18,6 @@ class Snake{
         
         int getSnakeX(int i);
         int getSnakeY(int i);
-        void move(char dir);
+        void move(char dir, bool isEat);
         int getSnakeLen();
-        void setEat(bool isEat);
 };

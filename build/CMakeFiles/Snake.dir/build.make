@@ -69,24 +69,10 @@ include CMakeFiles/Snake.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Snake.dir/flags.make
 
-CMakeFiles/Snake.dir/src/Board.cpp.o: CMakeFiles/Snake.dir/flags.make
-CMakeFiles/Snake.dir/src/Board.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/Board.cpp
-CMakeFiles/Snake.dir/src/Board.cpp.o: CMakeFiles/Snake.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Snake.dir/src/Board.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Snake.dir/src/Board.cpp.o -MF CMakeFiles/Snake.dir/src/Board.cpp.o.d -o CMakeFiles/Snake.dir/src/Board.cpp.o -c /home/pranav/Documents/c++_code/Snake-Console-/src/Board.cpp
-
-CMakeFiles/Snake.dir/src/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Snake.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pranav/Documents/c++_code/Snake-Console-/src/Board.cpp > CMakeFiles/Snake.dir/src/Board.cpp.i
-
-CMakeFiles/Snake.dir/src/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pranav/Documents/c++_code/Snake-Console-/src/Board.cpp -o CMakeFiles/Snake.dir/src/Board.cpp.s
-
 CMakeFiles/Snake.dir/src/Food.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/Food.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/Food.cpp
 CMakeFiles/Snake.dir/src/Food.cpp.o: CMakeFiles/Snake.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Snake.dir/src/Food.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Snake.dir/src/Food.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Snake.dir/src/Food.cpp.o -MF CMakeFiles/Snake.dir/src/Food.cpp.o.d -o CMakeFiles/Snake.dir/src/Food.cpp.o -c /home/pranav/Documents/c++_code/Snake-Console-/src/Food.cpp
 
 CMakeFiles/Snake.dir/src/Food.cpp.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/Snake.dir/src/Food.cpp.s: cmake_force
 CMakeFiles/Snake.dir/src/Game.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/Game.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/Game.cpp
 CMakeFiles/Snake.dir/src/Game.cpp.o: CMakeFiles/Snake.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Snake.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Snake.dir/src/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Snake.dir/src/Game.cpp.o -MF CMakeFiles/Snake.dir/src/Game.cpp.o.d -o CMakeFiles/Snake.dir/src/Game.cpp.o -c /home/pranav/Documents/c++_code/Snake-Console-/src/Game.cpp
 
 CMakeFiles/Snake.dir/src/Game.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/Snake.dir/src/Game.cpp.s: cmake_force
 CMakeFiles/Snake.dir/src/Snake.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/Snake.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/Snake.cpp
 CMakeFiles/Snake.dir/src/Snake.cpp.o: CMakeFiles/Snake.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Snake.dir/src/Snake.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Snake.dir/src/Snake.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Snake.dir/src/Snake.cpp.o -MF CMakeFiles/Snake.dir/src/Snake.cpp.o.d -o CMakeFiles/Snake.dir/src/Snake.cpp.o -c /home/pranav/Documents/c++_code/Snake-Console-/src/Snake.cpp
 
 CMakeFiles/Snake.dir/src/Snake.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/Snake.dir/src/Snake.cpp.s: cmake_force
 CMakeFiles/Snake.dir/src/main.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/main.cpp.o: /home/pranav/Documents/c++_code/Snake-Console-/src/main.cpp
 CMakeFiles/Snake.dir/src/main.cpp.o: CMakeFiles/Snake.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Snake.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Snake.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Snake.dir/src/main.cpp.o -MF CMakeFiles/Snake.dir/src/main.cpp.o.d -o CMakeFiles/Snake.dir/src/main.cpp.o -c /home/pranav/Documents/c++_code/Snake-Console-/src/main.cpp
 
 CMakeFiles/Snake.dir/src/main.cpp.i: cmake_force
@@ -141,7 +127,6 @@ CMakeFiles/Snake.dir/src/main.cpp.s: cmake_force
 
 # Object files for target Snake
 Snake_OBJECTS = \
-"CMakeFiles/Snake.dir/src/Board.cpp.o" \
 "CMakeFiles/Snake.dir/src/Food.cpp.o" \
 "CMakeFiles/Snake.dir/src/Game.cpp.o" \
 "CMakeFiles/Snake.dir/src/Snake.cpp.o" \
@@ -150,7 +135,6 @@ Snake_OBJECTS = \
 # External object files for target Snake
 Snake_EXTERNAL_OBJECTS =
 
-Snake: CMakeFiles/Snake.dir/src/Board.cpp.o
 Snake: CMakeFiles/Snake.dir/src/Food.cpp.o
 Snake: CMakeFiles/Snake.dir/src/Game.cpp.o
 Snake: CMakeFiles/Snake.dir/src/Snake.cpp.o
@@ -158,7 +142,7 @@ Snake: CMakeFiles/Snake.dir/src/main.cpp.o
 Snake: CMakeFiles/Snake.dir/build.make
 Snake: /usr/local/lib/libraylib.a
 Snake: CMakeFiles/Snake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Snake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pranav/Documents/c++_code/Snake-Console-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Snake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Snake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -151,10 +151,9 @@ CMakeFiles/Snake.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc /usr/local/include/raylib.h \
  /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Game.h \
- /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Board.h \
+ /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Food.h \
+ /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Snake.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Food.h \
- /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Snake.h
+ /usr/include/c++/13/bits/vector.tcc

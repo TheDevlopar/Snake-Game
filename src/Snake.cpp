@@ -9,38 +9,35 @@ int Snake::getSnakeY(int i){
 int Snake::getSnakeLen(){
     return body.size();
 }
-void Snake::setEat(bool isEat){
-    eat = isEat;
-}
-void Snake::move(char dir){
+void Snake::move(char dir, bool isEat){
     bodyX = body[0].x;
     bodyY = body[0].y;
     switch(dir){
         case 'W':
             bodyY -= 40;
             body.insert(body.begin(), {bodyX, bodyY});
-            if(eat == false){
+            if(!isEat){
                 body.pop_back();
             }
             break;
         case 'A':
             bodyX -= 40;
             body.insert(body.begin(), {bodyX, bodyY});
-            if(eat == false){
+            if(!isEat){
                 body.pop_back();
             }
             break;
         case 'S':
             bodyY += 40;
             body.insert(body.begin(), {bodyX, bodyY});
-            if(eat == false){
+            if(!isEat){
                 body.pop_back();
             }
             break;
         case 'D':
             bodyX += 40;
             body.insert(body.begin(), {bodyX, bodyY});
-            if(eat == false){
+            if(!isEat){
                 body.pop_back();
             }
             break;

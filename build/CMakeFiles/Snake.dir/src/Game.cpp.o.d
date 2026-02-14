@@ -2,7 +2,8 @@ CMakeFiles/Snake.dir/src/Game.cpp.o: \
  /home/pranav/Documents/c++_code/Snake-Console-/src/Game.cpp \
  /usr/include/stdc-predef.h \
  /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Game.h \
- /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Board.h \
+ /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Food.h \
+ /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Snake.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -53,8 +54,6 @@ CMakeFiles/Snake.dir/src/Game.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Food.h \
- /home/pranav/Documents/c++_code/Snake-Console-/src/../include/Snake.h \
  /usr/local/include/raylib.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \

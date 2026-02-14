@@ -130,30 +130,6 @@ Snake/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/build
 .PHONY : Snake/fast
 
-src/Board.o: src/Board.cpp.o
-.PHONY : src/Board.o
-
-# target to build an object file
-src/Board.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/Board.cpp.o
-.PHONY : src/Board.cpp.o
-
-src/Board.i: src/Board.cpp.i
-.PHONY : src/Board.i
-
-# target to preprocess a source file
-src/Board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/Board.cpp.i
-.PHONY : src/Board.cpp.i
-
-src/Board.s: src/Board.cpp.s
-.PHONY : src/Board.s
-
-# target to generate assembly for a file
-src/Board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/Board.cpp.s
-.PHONY : src/Board.cpp.s
-
 src/Food.o: src/Food.cpp.o
 .PHONY : src/Food.o
 
@@ -259,9 +235,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Snake"
-	@echo "... src/Board.o"
-	@echo "... src/Board.i"
-	@echo "... src/Board.s"
 	@echo "... src/Food.o"
 	@echo "... src/Food.i"
 	@echo "... src/Food.s"
