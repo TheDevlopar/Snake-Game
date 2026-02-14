@@ -1,0 +1,28 @@
+# Build folder
+build/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Linux binaries
+Snake
+
+# macOS junk
+.DS_Store
+
+# VSCode settings (optional)
+.vscode/
+de/
