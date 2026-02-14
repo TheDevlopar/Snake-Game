@@ -16,7 +16,8 @@ This project was created to learn real-time game loops, rendering, and practical
 3. Run the executable
 
 ## Example: 
-``` mkdir build
+``` 
+mkdir build
 cd build
 cmake ..
 make
