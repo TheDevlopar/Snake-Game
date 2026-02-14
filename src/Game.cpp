@@ -19,32 +19,32 @@ char Game::getDir(){
         return 'X';
     }
 }
-void Game::render(Board &board){
-    for(int i = 40; i < board.height; i += 40){
-        for(int j = 40; j < board.width; j += 40){
-            DrawRectangleLines(j, i, board.rectW, board.rectH, myWhite);
+
+void Game::Food::setFPos(){
+    posX = GetRandomValue(1, 27) * fSize;
+    posY = GetRandomValue(1, 17) * fSize;
+}
+
+void Game::Food::spawnFood(){
+    DrawRectangle(posX, posY, fSize, fSize, myFood);
+    DrawRectangleLines(posX, posY, fSize, fSize, BLACK);
+}
+
+void Game::Board::render(){
+    for(int i = bSize; i < height; i += bSize){
+        for(int j = bSize; j < width; j += bSize){
+            DrawRectangleLines(j, i, bSize, bSize, myWhite);
         }
     }
 }
-void Game::spawnFood(){
-    DrawRectangle(fPosX, fPosY, 40, 40, myFood);
-    DrawRectangleLines(fPosX, fPosY, 40, 40, BLACK);
-}
-void Game::drawSnake(Snake &snake){
+
+void Game::drawSnake(){
     for(int i = 0; i < snake.getSnakeLen(); i++){
-        DrawRectangle(snake.getSnakeX(i), snake.getSnakeY(i), 40, 40, mySnake);
-        DrawRectangleLines(snake.getSnakeX(i), snake.getSnakeY(i), 40, 40, BLACK);
+        DrawRectangle(snake.getSnakeX(i), snake.getSnakeY(i), size, size, myGreen);
+        DrawRectangleLines(snake.getSnakeX(i), snake.getSnakeY(i), size, size, BLACK);
     }
 }
-void Game::setFX(){
-    randX = GetRandomValue(1, 27);
-    fPosX = food.getX(randX);
-    
-}
-void Game::setFY(){
-    randY = GetRandomValue(1, 17);
-    fPosY = food.getX(randY);
-}
+
 bool Game::isGameOver(){
     if(snake.getSnakeX(0) >= board.width || snake.getSnakeX(0) <= 0 || snake.getSnakeY(0) >= board.height || snake.getSnakeY(0) <= 0){
         return true;
@@ -53,6 +53,7 @@ bool Game::isGameOver(){
         return false;
     }
 }
+
 bool Game::isCollision(){
     for(int i = 1; i < snake.getSnakeLen(); i++){
         if(snake.getSnakeX(0) == snake.getSnakeX(i) && snake.getSnakeY(0) == snake.getSnakeY(i)){
@@ -61,59 +62,70 @@ bool Game::isCollision(){
     }
     return false;
 }
+
+void Game::restart(){
+    food.setFPos();
+    snake.deleteS();
+    timer = 0;
+    dir = 'X';
+    running = true;
+}
+
 void Game::run(){
     InitWindow(1160, 760, "MyGame");
     SetTargetFPS(60);
 
-
-    //Get random numbers for food
-    
-    
-    setFX();
-    setFY();
+    //Set coordinates for food
+    food.setFPos();
     while(!WindowShouldClose()){
+        BeginDrawing();
         if(running){
-            BeginDrawing();
             ClearBackground(BLACK);
 
             //Frame counter for snake movement 
             timer++;
 
             //Draw Board
-            render(board);
+            board.render();
 
             //Food
-            spawnFood();
-            
-            //Snake draw
-            drawSnake(snake);
+            food.spawnFood();
 
-            //Input  
+            //Input
             tempDir = getDir();
             if(tempDir != dir && tempDir != 'X'){
                 dir = tempDir;
             }
+            
+            //Snake draw
+            drawSnake();
 
-            //I don't understand this part much but it has something to do with keeping everything consistent with the movement frame i guess.
-            if(timer == speed){
-                if(snake.getSnakeX(0) == fPosX && snake.getSnakeY(0) == fPosY){
-                    setFX();
-                    setFY();
+            //I don't understand this part very well but it has something to do with keeping everything consistent with the movement frame i guess.
+            if(timer == speed){  
+                
+                if(snake.getSnakeX(0) == food.posX && snake.getSnakeY(0) == food.posY){
+                    food.setFPos();
                     isEat = true;
                 }
                 else{
                     isEat = false;
                 }
                 snake.move(dir, isEat);
-                if(isGameOver() == true || isCollision() == true){
-                    CloseWindow();
+                if(isGameOver() || isCollision()){
+                    running = false;
                 }
                 timer = 0;
             }
-
-            EndDrawing();
-            
         }
+        else{
+            ClearBackground(BLACK);
+            DrawText("Game Over \n Press Enter to play again \n Press ESC to exit", 360, 560, 20, WHITE);
+            if(IsKeyPressed(KEY_ENTER)){
+                restart();
+            }
+        }
+        
+        EndDrawing();
     }
     CloseWindow();
 }

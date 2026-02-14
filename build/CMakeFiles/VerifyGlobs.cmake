@@ -5,7 +5,6 @@ cmake_policy(SET CMP0009 NEW)
 # SRC_FILES at CMakeLists.txt:15 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/pranav/Documents/c++_code/Snake-Console-/src/*.cpp")
 set(OLD_GLOB
-  "/home/pranav/Documents/c++_code/Snake-Console-/src/Food.cpp"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/Game.cpp"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/Snake.cpp"
   "/home/pranav/Documents/c++_code/Snake-Console-/src/main.cpp"

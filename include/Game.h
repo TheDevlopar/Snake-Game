@@ -1,5 +1,4 @@
 #pragma once
-#include "Food.h"
 #include "Snake.h"
 #include "raylib.h"
 
@@ -8,21 +7,24 @@ class Game{
         struct Board{
             int height = 720;
             int width = 1120;
-            int rectH = 40;
-            int rectW = 40;
+            int bSize = 40;
+            Color myWhite = {220, 220, 220, 80};
+            void render();
         };
-        Color myWhite = {220, 220, 220, 80};
-        Color mySnake = {80, 200, 120, 255};
-        Color myFood = {255, 90, 90, 255};
+        struct Food{
+            int posX;
+            int posY;
+            int fSize = 40;
+            Color myFood = {255, 90, 90, 255};
+            void setFPos();
+            void spawnFood();
+        };
+        
+        Color myGreen = {80, 200, 120, 255};
         bool running = true;
-        int posX = 40;
-        int posY = 40;
-        int randX = 0;
-        int randY = 0;
-        int fPosX = 0;
-        int fPosY = 0;
         char tempDir = 'X';
         char dir = 'X';
+        int size = 40;
         int speed = 5;
         int timer = 0;
         bool isEat = false;
@@ -31,12 +33,9 @@ class Game{
         Snake snake;
     public:
         void run();
-        void render(Board &board);
         char getDir();
-        void drawSnake(Snake &snake);
-        void setFX();
-        void setFY();
-        void spawnFood();
+        void drawSnake();
+        void restart();
         bool isGameOver();
         bool isCollision();
 };
